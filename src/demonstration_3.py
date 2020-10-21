@@ -15,6 +15,16 @@ Output `True`
 Input: `a` = "bat", `b` = "tar"
 Output `False`
 """
+
+
+# understand we want
+# to test whether string 1 and string2 are anagrams or words having the same letters arranged differently
 def is_anagram(a, b):
-    # Your code here
+    if a == b:
+        return False
+    elif len(a) == len(b) and set(list(a)) == set(list(b)):
+        return True
+    else:
+        return False
+
 
